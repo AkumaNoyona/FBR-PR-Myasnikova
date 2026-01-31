@@ -2,6 +2,7 @@ const menuToggle = document.getElementById('menuToggle');
 const nav = document.getElementById('mainNav');
 const scrollTopBtn = document.getElementById('scrollTop');
 
+// гамбургер-меню
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   nav.classList.toggle('active');
@@ -12,7 +13,7 @@ menuToggle.addEventListener('click', () => {
   document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
 });
 
-// кнопка наверх
+// кнопка "Наверх"
 window.addEventListener('scroll', () => {
   scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
 });
