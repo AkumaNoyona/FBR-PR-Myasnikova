@@ -11,10 +11,16 @@
 
 <!-- HEADER -->
 <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+    </button>
+
     <div class="header__container">
         <h1 class="header__logo">Avion</h1>
 
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" id="mainNav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#products">Plant pots</a></li>
                 <li class="nav__item"><a class="nav__link" href="#products">Ceramics</a></li>
@@ -174,6 +180,9 @@
 <footer class="footer">
     <p class="text-sm">Copyright © 2022 Avion LTD</p>
 </footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+<script src="menu.js"></script>
 
 </body>
 </html>
